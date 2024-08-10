@@ -495,9 +495,9 @@ namespace myConsole
 
     //lesson 22
 
-    while (true)
+    bool runAgain = false;
+    while (runAgain)
     {
-        bool runAgain = false;
         Console.WriteLine("Enter string..");
         string userInput = Console.ReadLine();
 
@@ -526,8 +526,8 @@ namespace myConsole
         string response = (Console.ReadLine()).ToUpper();
         if (response == "N")
         {
+            runAgain = false;
             Console.WriteLine("Thanks,");
-            break;
         }
     }
 
