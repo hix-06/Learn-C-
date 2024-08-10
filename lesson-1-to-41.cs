@@ -533,7 +533,7 @@ namespace myConsole
 
     //lesson 23
 
-    static void CalculateAverage[] nums)
+    static void CalculateAverage(nums[])
     {
         int sum = 0;
         foreach (int number in nums)
