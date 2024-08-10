@@ -656,8 +656,6 @@ namespace myConsole
     //lesson 27
 
     bool runAgain = true;
-    string response = "";
-
     while (runAgain)
     {
         Console.WriteLine("Please enter string to test");
@@ -682,7 +680,7 @@ namespace myConsole
         else
             Console.WriteLine($"{inputUser} is not a palindrome");
         Console.WriteLine("Wanna try another one? (Y/N)");
-        response = Console.ReadLine();
+        string response = Console.ReadLine();
         if (response.ToUpper() == "N") 
         {
             runAgain = false;
