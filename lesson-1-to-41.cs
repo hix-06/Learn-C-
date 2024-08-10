@@ -751,7 +751,7 @@ namespace myConsole
     // Explict Casting: 
     float f2 = (float)s; //float can not hold double, if u want to, cast double to float.. but that leads to data loss.
     int i2 = (int)s;    // int can not hold double, if u want to, cast double to int.. but that leads to data loss.
-    int i3 = (int)s;   // int can not hold float, if u want to, cast float to int.. but that leads to data loss.
+    int i3 = (int)f;   // int can not hold float, if u want to, cast float to int.. but that leads to data loss.
 
     // AVOID DATA LOSS PROBLEMS! do not use explicit casting except if u know that there wont be data loss issues, or u kknow a data loss issue wont affect the Program. 
 
