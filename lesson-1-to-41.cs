@@ -898,7 +898,7 @@ namespace myConsole
         return number / divisor;
     }
 
-    double result2 = Divide1(10, 0, isSuccessful);
+    double result2 = Divide2(10, 0, isSuccessful);
     System.Console.WriteLine($"{isSuccessful}"); // now isSuccessful value becomes false because we passed it by reference
 
      static double Divide2(double number, double divisor, ref bool isSuccessful)
@@ -912,7 +912,7 @@ namespace myConsole
         return number / divisor;
     }
 
-    double result3 = Divide1(10, 0, isSuccessful);
+    double result3 = Divide3(10, 0, isSuccessful);
     System.Console.WriteLine($"{isSuccessful}"); // now isSuccessful value becomes false because we passed it by reference
 
      static double Divide3(double number, double divisor, out bool isSuccessful)
