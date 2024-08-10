@@ -551,16 +551,18 @@ namespace myConsole
 
     //note: single responsibility principle: each code unit (method, class..) does only one task.
 
-    static double CalculateAverage(int[] nums, bool printSumToConsole = false)
+    static double CalculateAverage(int[] nums, bool printAverageToConsole = false, bool printSumToConsole = false)
     {
         int sum = 0;
         foreach (int number in nums)
         {
             sum += number;                  // optional parameters is set by giving themm initial values, if assigned when 
         }                                  // method called then work with that value if not then acts as the initial value given to it in definition, note: optional parameter(s) must be last in method parameter(s)
+        double average = sum / nums.Length;
         if (printSumToConsole)
             Console.WriteLine($"Sum: {sum");
-        double average = sum / nums.Length;
+        if (printAverageToConsole)
+            Console.WriteLine($"Aferage: {average");
         return average;
     }
 
