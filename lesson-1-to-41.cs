@@ -495,7 +495,7 @@ namespace myConsole
 
     //lesson 22
 
-    bool runAgain = false;
+    bool runAgain = true;
     while (runAgain)
     {
         Console.WriteLine("Enter string..");
